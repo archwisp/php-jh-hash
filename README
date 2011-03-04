@@ -1,34 +1,35 @@
 JH hash function for PHP 
 Version 0.1
 
-JH is a hash function submitted to the NIST hash competition (2008--2012) in
-October 2008. There are four JH hash algorithms, namely, JH-224, JH-256, JH-384
-and JH-512, constructed from the same compression function. In January 2011,
-the round number of JH is changed from 35.5 to 42 for better hardware
-efficiency and larger security margin. 
+JH is a hash function which was submitted to the NIST hash competition
+(2008--2012) in October 2008 and selected as one of the five finalists. There
+are four JH hash algorithms, namely, JH-224, JH-256, JH-384 and JH-512,
+constructed from the same compression function. 
 
 The author of this extension was in no way involved in the development of the
 Grøstl hash function. The hash source code was taken directly from NIST
 submission package with a few minor variable name changes so that it would play
 nice with PHP.
 
-=== Installation ===
+See the CREDITS section for more details.
+
+= INSTALLATION =
 
 You'll need to have the PHP 5 development package and a working build
 environment to compile this module.
 
 To compile and install:
 
-phpize
-./configure --enable-jh
-make
-sudo make install
+   phpize
+   ./configure --enable-jh
+   make
+   sudo make install
 
 Then add the following to your php.ini file:
 
-extension=jh.so
+   extension=jh.so
 
-=== Usage ===
+= USAGE =
 
 Function Description:
    
@@ -39,18 +40,18 @@ Example:
    // Build a base-64 encoded hash
    $hash = base64_encode(jh_hash('Hello, world.'));
 
-=== Credits ===
+= CREDITS =
 
 JH hash function by Hongjun Wu
+
+PHP extension written by Bryan C. Geraghty <bryan@ravensight.org>
 
 For more details, see: 
 
    http://www3.ntu.edu.sg/home/wuhj/research/jh/
    http://csrc.nist.gov/groups/ST/hash/sha-3/Round3/submissions_rnd3.html
 
-PHP extension written by Bryan C. Geraghty <bryan@ravensight.org>
-
-=== License ===
+= LICENSE =
 
 The SHA-3 Submission Requirements states:
 
