@@ -7,7 +7,7 @@ are four JH hash algorithms, namely, JH-224, JH-256, JH-384 and JH-512,
 constructed from the same compression function. 
 
 The author of this extension was in no way involved in the development of the
-Grøstl hash function. The hash source code was taken directly from NIST
+JH hash function. The hash source code was taken directly from NIST
 submission package with a few minor variable name changes so that it would play
 nice with PHP.
 
